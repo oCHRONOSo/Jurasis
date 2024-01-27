@@ -10,52 +10,17 @@
     <title>Jurasis</title>
     <link rel="stylesheet" href="doc.css" />
     <link rel="icon" type="image/png" href="./Img/e-book.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body style="background-color: #efefef">
     <header class="sticky-top" id="header-setup">
-      <!-- <nav class="navbar bg-dark" style="box-shadow: 0px 0em 1.5em green">
-        <a class="h4 text-light nav-link" href="./index.html"
-          >Jurasis Chatbot</a
-        >
-        <div class="row">
-          <div class="row m-1">
-            <a
-              class="h5 nav-link text-success border-bottom border-success mx-2"
-              href="doc.html"
-              >Documentación</a
-            >
-          </div>
-          <div class="row m-1">
-            <a
-              class="h5 nav-link text-success border-bottom border-success mx-2"
-              href="#"
-              >¿Quiénes somos?</a
-            >
-          </div>
-        </div>
-
-        <div>
-          <button class="btn btn-success">LOGIN</button>
-          <button class="btn btn-outline-success">Register</button>
-        </div>
-      </nav> -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Jurasis Chatbot</a>
@@ -86,10 +51,15 @@
                 >
               </li>
               <li class="nav-item">
+                <a class="nav-link text-success" href="./encuesta.html"
+                  >Estudio de mercado</a
+                >
+              </li>
+              <li class="nav-item">
                 <a class="nav-link text-success" href="#">¿Quiénes somos?</a>
               </li>
             </ul>
-            <div class="col-lg-4 text-lg-right text-center">
+            <div class="flex-row-reverse text-center">
               <button class="btn btn-success">LOGIN</button>
               <button class="btn btn-outline-success">Register</button>
             </div>
@@ -99,96 +69,382 @@
     </header>
 
     <main>
-      <div class="row">
-        <div class="col-3 bg-white">
-          <nav class="nav flex-column">
-            <a class="nav-link dropdown-item" aria-current="page" href="">Unit 1</a>
-            <a class="nav-link dropdown-item" href="#unit1">Unit 2</a>
-            <a class="nav-link dropdown-item" href="#">Unit 3</a>
-              <a class="nav-link dropdown-item dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+      <div class="row gx-0">
+        <div class="col-lg-2 me-5 pe-2 bg-white lbar">
+          <nav class="nav lnav navbar-nav-scroll ">
+            <a class="nav-link dropdown-item text-success" href="#unit1">HISTORIA DE UNA IDEA</a>
+            <a class="nav-link dropdown-item text-success" href="#unit2">EL RESULTADO FINAL</a>
+            <a class="nav-link dropdown-item text-success" href="#unit3">MACROENTORNO</a>
+            <a class="nav-link dropdown-item text-success" href="#unit4">MICROENTORNO</a>
+            <a class="nav-link dropdown-item text-success" href="#unit5">RESPONSABILIDADES SOCIALES</a>
+            <a class="nav-link dropdown-item text-success" href="#unit6">ANÁLISIS DAFO</a>
+            <a class="nav-link dropdown-item text-success" href="#unit7">NUESTRAS ESTRATEGIAS</a>
+            <a class="nav-link dropdown-item text-success" href="#unit8">EL CANVAS JURASIS</a>
+            <a class="nav-link dropdown-item text-success" href="#unit9">ORGANIGRAMA</a>
           </nav>
         </div>
-        <div class="col-9">
+        <div class="col-lg-9">
           <div class="float-container">
             <div class="comment">
               <p>Ese soy yo. Soy un dino muy listo y muy elegante</p>
             </div>
-
             <!-- Asistente flotante -->
-            <div class="text-center">
-              <!-- Aquí pondrías tu imagen o contenido del asistente -->
-              <img
-                class="jurasis"
-                src="Img/jurassis_png_little.png"
-                alt="Asistente Inteligente"
-                width="30%"
-                height="30%"
+            <img
+              class="jurasis"
+              src="Img/jurassis_png_little.png"
+              alt="Asistente Inteligente"
+              width="30%"
+              height="30%"
+            />
+          </div>
+          <h2 class="display-2" id="unit1">HISTORIA DE UNA IDEA</h2>
+          <div class="container mt-5">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td class="image-cell">
+                    <img
+                      src="./Img/unidad_1/1 arriba izquierda.png"
+                      alt="Image 1"
+                      class="img-fluid"
+                      onmouseover="hoverImage(this, './Img/unidad_1/1surprise.png')"
+                      onmouseout="unhoverImage(this, './Img/unidad_1/1 arriba izquierda.png')"
+                    />
+                  </td>
+                  <td class="image-cell">
+                    <img
+                      src="./Img/unidad_1/2 arriba derecha.png"
+                      alt="Image 2"
+                      class="img-fluid"
+                      onmouseover="hoverImage(this, './Img/unidad_1/2sorpresa.png')"
+                      onmouseout="unhoverImage(this, './Img/unidad_1/2 arriba derecha.png')"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="image-cell">
+                    <img
+                      src="./Img/unidad_1/3abajoizquierda.png"
+                      alt="Image 3"
+                      class="img-fluid"
+                      onmouseover="hoverImage(this, './Img/unidad_1/3sorpresa.png')"
+                      onmouseout="unhoverImage(this, './Img/unidad_1/3abajoizquierda.png')"
+                    />
+                  </td>
+                  <td class="image-cell">
+                    <img
+                      src="./Img/unidad_1/4abajoderecha.png"
+                      alt="Image 4"
+                      class="img-fluid"
+                      onmouseover="hoverImage(this, './Img/unidad_1/4surprise.png')"
+                      onmouseout="unhoverImage(this, './Img/unidad_1/4abajoderecha.png')"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 class="display-2" id="unit2">EL RESULTADO FINAL</h2>
+          <div class="container mt-5">
+            <iframe
+              src="./index.html"
+              title="description"
+              height="600 rem"
+              width="100%"
+              class="shadow rounded-4"
+            ></iframe>
+            <p class="h4 mt-3">
+              Este seria uno de nuestros competidores:
+              <a class="text-success" href="https://estasentuderecho.com/"
+                >Estás en tu derecho</a
+              >
+            </p>
+          </div>
+          
+          <h2 class="display-2" id="unit3">MACROENTORNO</h2>
+
+          <!-- Mapeado de imagenes -->
+
+          <div class="container mt-5 text-center">
+            <img
+              class="img-fluid rounded-3"
+              id="PESTEL"
+              src="Img/Macroentorno_img/gráfico_pestel.png"
+              alt="PESTEL_img"
+              usemap="#map"
+            />
+
+            <map name="map">
+              <area
+                id="area1"
+                alt="area1_politica"
+                coords="207,485,290,540,375,474,337,383,234,393"
+                shape="poly"
+                onclick="politicos()"
               />
+              <area
+                id="area2"
+                alt="area2_economia"
+                coords="301,210,215,259,237,351,342,367,381,275"
+                shape="poly"
+                onclick="economias()"
+              />
+              <area
+                id="area"
+                alt="area3_sociocultural"
+                coords="330,186,389,265,487,224,478,127,385,103"
+                shape="poly"
+                onclick="sociocultural()"
+              />
+              <area
+                id="area"
+                alt="area4_tecnológico"
+                coords="520,134,510,223,604,272,667,195,616,109"
+                shape="poly"
+                onclick="tecnologicos()"
+              />
+              <area
+                id="area"
+                alt="area5_ecológico"
+                coords="695,231,617,290,647,385,750,382,781,285"
+                shape="poly"
+                onclick="ecologicos()"
+              />
+              <area
+                id="area"
+                alt="area6_legal"
+                coords="643,400,741,413,768,509,677,561,602,492"
+                shape="poly"
+                onclick="legal()"
+              />
+            </map>
+          </div>
+
+          <h2 class="display-2" id="unit4">MICROENTORNO</h2>
+          <div class="container mt-5">
+            <div
+              id="carouselExampleControls"
+              class="carousel carousel-dark"
+            >
+              <div class="carousel-inner rounded-3">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Microentorno_img/Porter_0.png"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Microentorno_img/Porter_1.png"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Microentorno_img/Porter_2.png"
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Microentorno_img/Porter_3.png"
+                    alt="Fourth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Microentorno_img/Porter_4.png"
+                    alt="Fifth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Microentorno_img/Porter_5.png"
+                    alt="Last slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
             </div>
           </div>
-          <h1 class="h2" id="unit1">unit1</h1>
-            <div class="text-center">
-              <img
-                class="img-unit1"
-                src="Img/jurassis.jpg"
-                alt="Jurasis logo"
-                srcset=""
-                width="60%"
-                height="50%"
-              />
-            </div>
 
-            <div class="text">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-                asperiores reiciendis facere eveniet quia minima ipsa sunt aliquid
-                quas incidunt rerum omnis, itaque placeat magni voluptatem
-                adipisci, id nostrum, culpa repellat impedit voluptatum nihil
-                excepturi. Nam nesciunt debitis dicta libero illo, minus excepturi
-                consectetur totam eos esse quae vel explicabo repellat rem aut
-                ipsa velit nobis magnam tempora. Soluta quos cumque provident nisi
-                numquam commodi totam, nemo cupiditate quo nam animi tempore,
-                explicabo in accusamus quam illo ducimus architecto magni odit,
-                aspernatur quae nesciunt. Quos suscipit cumque distinctio nisi
-                soluta sit quasi, dolores neque asperiores ipsa laborum voluptatum
-                error deserunt cum? Aut, quidem! Quo delectus a ex.
-              </p>
-            </div>
-          <h1 class="h2" id="unit2">unit2</h1>
-          <h1 class="h2">unit3</h1>
-          <h1 class="h2">unit4</h1>
-          <div class="text-center">
+          <h2 class="display-2" id="unit5">RESPONSABILIDADES SOCIALES</h2>
+          <div class="container mt-5 text-center">
             <img
-              src="Img/jurassis.jpg"
-              alt="Jurasis logo"
-              srcset=""
-              width="60%"
-              height="50%"
+              src="./Img/responsabilidad_social.png"
+              alt="responsabilidades sociales"
+              class="img-fluid rounded-3"
             />
           </div>
 
-          <div class="text">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-              asperiores reiciendis facere eveniet quia minima ipsa sunt aliquid
-              quas incidunt rerum omnis, itaque placeat magni voluptatem
-              adipisci, id nostrum, culpa repellat impedit voluptatum nihil
-              excepturi. Nam nesciunt debitis dicta libero illo, minus excepturi
-              consectetur totam eos esse quae vel explicabo repellat rem aut
-              ipsa velit nobis magnam tempora. Soluta quos cumque provident nisi
-              numquam commodi totam, nemo cupiditate quo nam animi tempore,
-              explicabo in accusamus quam illo ducimus architecto magni odit,
-              aspernatur quae nesciunt. Quos suscipit cumque distinctio nisi
-              soluta sit quasi, dolores neque asperiores ipsa laborum voluptatum
-              error deserunt cum? Aut, quidem! Quo delectus a ex.
-            </p>
+          <h2 class="display-2" id="unit6">ANÁLISIS DAFO</h2>
+          <div class="container mt-5">
+            <div
+              id="carouselControlsDAFO"
+              class="carousel carousel-dark"
+
+            >
+              <div class="carousel-inner rounded-3">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/DAFO_img/dafo1.png"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/DAFO_img/dafo2.png"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/DAFO_img/dafo3.png"
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/DAFO_img/dafo4.png"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-next"
+                href="#carouselControlsDAFO"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
+          <h2 class="display-2" id="unit7">NUESTRAS ESTRATEGIAS</h2>
+          <div class="container mt-5 text-center">
+            <img
+              src="./Img/Estrategias.png"
+              alt="responsabilidades sociales"
+              class="img-fluid rounded-3"
+            />
+          </div>
+          <h2 class="display-2" id="unit8">EL CANVAS JURASIS</h2>
+          <div class="container mt-5">
+            <div
+              id="carouselControlsCanva"
+              class="carousel carousel-dark"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas0.png"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas1.png"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas2.png"
+                    alt="Third slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas3.png"
+                    alt="Fourth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas4.png"
+                    alt="Fifth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas5.png"
+                    alt="Sixth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas6.png"
+                    alt="Seventh slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas7.png"
+                    alt="Eighth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas8.png"
+                    alt="Ninth slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./Img/Canvas_img/canvas9.png"
+                    alt="Last slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-next"
+                href="#carouselControlsCanva"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
+          <h2 class="display-2" id="unit9">ORGANIGRAMA</h2>
+          <div>
+            <img class="img-fluid" src="./organigrama.png" alt="Me being lazy to put the image description.">
           </div>
         </div>
       </div>
@@ -201,5 +457,8 @@
     </footer>
 
     <script src="doc.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>

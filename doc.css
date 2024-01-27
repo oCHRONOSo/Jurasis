@@ -1,35 +1,55 @@
-
-
 .float-container {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: transparent;
-    z-index: 99;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  z-index: 99;
 }
 
-
+.jurasis {
+  transform: scale(1);
+}
 
 .comment {
-    display: none;
-    position: absolute;
-    bottom: 50%;
-    right: 75%;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  right: 75%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .comment p {
-    margin: 0;
+  margin: 0;
 }
 footer {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+.table img {
+  transition: transform 0.3s ease-in-out;
+}
+.table img:hover {
+  transform: scale(1.1);
+  transform-origin: center center;
+}
+.lnav{
+  position: sticky;
+  left: 0%;
+  top: 0%;
+}
+.lnav  a:hover {
+   background-color:#efefef;
+}
+h2 {
+  padding-top: 1rem;
 }

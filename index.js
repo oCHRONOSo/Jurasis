@@ -1,9 +1,10 @@
-import { process } from './env'
+import { process } from '/env'
 import { Configuration, OpenAIApi } from 'openai'
 
 const setupTextarea = document.getElementById("userInput");
 const setupInputContainer = document.getElementById("setup-input-container");
-const iaStartText = document.getElementById("output-container");
+const iaStartText = document.getElementById("output-text");
+const iaStartBlock = document.getElementById("output-container");
 
 
 
@@ -16,9 +17,7 @@ const openai = new OpenAIApi(configuration);
 document.getElementById("send-btn").addEventListener("click", () =>{
 
     const inputUserText = setupTextarea.value;
-    setupInputContainer.innerHTML = '<img src="Img/lo4ding_gif.gif" alt="loading" class="loading" id="loading"></img>';
-    iaStartText.innerHTML = '<p id="output-text">Ok, just wait a second. This little dinno is thinking a good response..."</p>'
-
+    setupInputContainer.innerHTML = '<div class="h2" id="speech-bubble-ai"> <p id="ai-text" class="display-5">Ok, just wait a second. This little dinno is thinking a good response...</p></div><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDA5bTB3MmlxdXZrNzd5MDdnZmMxNnl4dDNrZHg0bzFuNndpZXo0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cjnnH0h3cfBTORaUnp/giphy.gif" alt="" height="80em" width="80em" class="loading m-5" id="loading">';
     fetchBotReply(inputUserText)
 })
 
@@ -32,8 +31,8 @@ async function fetchBotReply(inputUserText){
     })
     //console.log(response)
     setupInputContainer.style.display = "none";
-    //iaStartText.innerText = response.data.choices[0].text.trim();
-    iaStartText.style.display = "block";
-    document.getElementById("output-text").innerText = response.data.choices[0].text.trim();
-    console.log(iaStartText.innerText); 
+    document.getElementById("Jurasis_dino").src = "Img/Jurasis_talking.gif";
+    iaStartText.innerText = response.data.choices[0].text.trim();
+    iaStartBlock.style.display = "block";
+    //console.log(iaStartText.innerText); 
 }// javascript
